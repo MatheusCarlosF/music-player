@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="nft" src="./src/giff.gif" width="100%">
+  <img alt="nft" src="" width="100%">
 </p>
 
 ## 🚀 Tecnologias
