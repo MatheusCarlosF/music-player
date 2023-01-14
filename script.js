@@ -60,4 +60,4 @@ function stopTimers() {
 }
 
 document.getElementById("play-button").addEventListener("click", startTimers);
-document.getElementById("stop-button").addEventListener("click", stopTimers);
+// document.getElementById("stop-button").addEventListener("click", stopTimers);
