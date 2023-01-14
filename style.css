@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(/ROCKET-exercicios/player/src/backg.svg);
+    background-image: url("backg.svg");
     backdrop-filter: blur(10px);
     background-size: cover;
     background-repeat: no-repeat;
