@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-img">
+        <img src="/ROCKET-exercicios/player/src/note.svg" alt="" srcset="">
+      </div>
+      <div class="musc-name">
+        <marquee behavior="smooth" direction="">lofi hip hop radio - beats to relax/study to</marquee>
+      </div>
+
+      <input type="range" min="0" max="60" value="0" id="progressBar">
+
+      <div class="cron">
+        <div id="count-up-time">0:00</div>
+        <div id="time-left">0:00</div>
+      </div>
+
+      <div class="btn">
+        <button id="back-button">
+          <img src="/ROCKET-exercicios/player/src/back.svg" alt="">
+        </button>
+        <button id="play-button">
+          <img src="/ROCKET-exercicios/player/src/play.svg" alt="">
+        </button>
+        <!-- <button id="stop-button">Stop</button> -->
+        <button id="skip-button">
+          <img src="/ROCKET-exercicios/player/src/skip.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

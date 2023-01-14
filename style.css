@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    border: none;
+    padding: none;
+    margin: 0;
+    overflow: hidden;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body {
+    background-color: #181629;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/ROCKET-exercicios/player/src/backg.svg);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    height: 60%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    background: rgba(17, 2, 19, 0.61);
+    box-shadow: 0 8px 32px 0 rgba(253, 253, 253, 0.703);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.music-img{
+   width: 50%
+}
+.music-img marquee{
+    padding: 10px;
+}
+.music-img img{
+    width: 100%;
+    padding: 5px ;
+}
+.musc-name {
+    width: 70%;
+    padding: 10px;
+}
+
+#progressBar{
+    width: 70%;
+}
+.cron{
+    padding: 10px 0px 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.btn #play-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.479);
+    border: none;
+    cursor: pointer;
+}
+.btn #play-button:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}    
+
+.btn #back-button, #skip-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    border: none;
+    cursor: pointer;
+}
+.btn #back-button:hover, #skip-button:hover{
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.btn img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progressBar {
+-webkit-appearance: none;
+appearance: none;
+width: 70%;
+height: 15px;
+border-radius: 5px;
+background: rgba(0, 0, 0, 0.473);
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+#progressBar::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.479);
+cursor: pointer;
+}
+
+#progressBar::-moz-range-thumb {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.479);
+cursor: pointer;
+}
+
+@media (max-width: 768px ) and (min-width : 320px) {
+  .container{
+    height: 60%;
+    width: 90vw;
+  }
+  .music-img{
+    width: 45%
+ }
+}
