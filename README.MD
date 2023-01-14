@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Uma aplicação web, onde é possivel ouvir uma faixa de áudio. Ao clicar no botão de play, a música é inciada e os cronômetros são sincronizados de acordo com o tempo atual da faixa.
 
--   Confira o site [online aqui](https://nft-landing-rksxhdelo-matheuscarlosf.vercel.app/)
+-   Confira o site [online aqui](https://music-player-rouge-eight.vercel.app/)
 
 ## :telephone_receiver: Contato
 
