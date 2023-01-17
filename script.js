@@ -3,6 +3,7 @@ let intervalId;
 let countUpTime = 0;
 let countUpIntervalId;
 let audio = new Audio("audio.mp3");
+let isPlaying = false;
 
 audio.addEventListener("loadedmetadata", function () {
     timeLeft = Math.round(audio.duration);
@@ -35,6 +36,11 @@ function updateProgress() {
 
 function startTimers() {
     console.log("play");
+    isPlaying = true;
+    if (isPlaying === true) {
+        document.getElementById("play-button").style.display = "none";
+        document.getElementById("stop-button").style.display = "flex";
+    }
     audio.play();
     intervalId = setInterval(() => {
         if (timeLeft <= 0) {
@@ -54,10 +60,17 @@ function startTimers() {
 }
 
 function stopTimers() {
+    console.log("pause");
+    isPlaying = false;
+    if (isPlaying == false) {
+        document.getElementById("play-button").style.display = "flex";
+        document.getElementById("stop-button").style.display = "none";
+    }
+
     clearInterval(intervalId);
     clearInterval(countUpIntervalId);
     audio.pause();
 }
 
 document.getElementById("play-button").addEventListener("click", startTimers);
-// document.getElementById("stop-button").addEventListener("click", stopTimers);
+document.getElementById("stop-button").addEventListener("click", stopTimers);
